@@ -877,6 +877,10 @@ ul li:nth-of-type(2){
         z-index: 15;
     }
 
+    #section8 > .maintain{
+        font-size: 1.5rem;
+    }
+
     .passive{
         width: 100%;
         text-align: left;
