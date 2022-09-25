@@ -43,9 +43,13 @@ nav{
 
 ul li{
     list-style: none;
+    font-family: 'DM Sans';
+    font-weight: 400;
 }
 
 ul li a{
+    font-family: 'DM Sans';
+    font-weight: 400;
     text-decoration: none;
     color: #25366C;
 }
