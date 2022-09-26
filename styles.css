@@ -713,6 +713,10 @@ ul li:nth-of-type(2){
         overflow-x: hidden;
     }
 
+    nav{
+        width: 94%;
+    }
+
     .nav-links > ul li:nth-child(2){
         margin-left: 10px;
     }
