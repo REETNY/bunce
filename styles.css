@@ -725,6 +725,19 @@ ul li:nth-of-type(2){
         line-height: 2.5rem;
     }
 
+    #section2{
+        padding-left: 0;
+        width: 94%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #section3, #section4, #section5{
+        width: 94%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
     #section6{
         z-index: 6;
     }
@@ -737,7 +750,11 @@ ul li:nth-of-type(2){
         left: -10%;
     }
 
-   
+    .section1{
+        width: 94%;
+        margin-left: auto;
+        margin-right: auto;
+    }
 
 
     .circle, .circle1, .circle2, .circle3{
@@ -943,6 +960,9 @@ ul li:nth-of-type(2){
         z-index: 99;
     }
 
+    .num{
+        margin-top: 25px;
+    }
 
 
 }
