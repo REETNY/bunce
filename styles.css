@@ -717,10 +717,6 @@ ul li:nth-of-type(2){
         width: 94%;
     }
 
-    .nav-links > ul li:nth-child(2){
-        margin-left: 10px;
-    }
-
     .second{
         display: none;
     }
@@ -976,13 +972,78 @@ ul li:nth-of-type(2){
 
     body{
         overflow-x: hidden;
+        width: 100vw;
+    }
+    nav{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    #click{
+        display: none;
+    }
+
+    .menu-btn{
+        margin-left: auto;
+    }
+
+    nav .menu-btn i{
+        cursor: pointer;
+        color: #0066FF;
+        font-size: 1.7rem;
+    }
+
+    #click:checked ~ .nav-links ul{
+        left: 0;
+    }
+    #click:checked ~ .menu-btn i:before{
+        content: "\f00d";
+    }
+
+    header{
+        width: 100%;
+        overflow-x: hidden;
+    }
+
+    .main-content{
+        width: 100%;
+        overflow-x: hidden;
+    }
+
+
+    .nav-links ul{
+        position: fixed;
+        top: 80px;
+        left: -100%;
+        display: block;
+        background-color: #24366B;
+        height: 100vh;
+        width: 100%;
+        z-index: 999;
+        transition: all 0.3s ease;
+    }
+
+    .nav-links ul li{
+        margin-top: 40px;
+        margin-left: 8%;
+    }
+
+    .nav-links ul li a{
+        color: white;
+        font-size: 1.1rem;
+        font-weight: 400;
+        display: block;
     }
 
     #section7{
         padding-top: 30px;
     }
 
-
+    .nav-links ul li a:hover{
+        color: #0066FF;
+    }
 
     .sms-text{
         margin-bottom: 30px;
@@ -1060,4 +1121,11 @@ ul li:nth-of-type(2){
   .naira{
     font-size: 9px;
   }
+}
+
+@media only screen and (min-width : 1001px){
+
+    #click, .menu-btn{
+        display: none;
+    }
 }
