@@ -968,7 +968,7 @@ ul li:nth-of-type(2){
 }
 
 
-@media only screen and (max-width: 1000px){
+@media only screen and (max-width: 990px){
 
     body{
         overflow-x: hidden;
@@ -981,9 +981,6 @@ ul li:nth-of-type(2){
         align-items: center;
     }
 
-    #click{
-        display: none;
-    }
 
     .menu-btn{
         margin-left: auto;
@@ -993,13 +990,6 @@ ul li:nth-of-type(2){
         cursor: pointer;
         color: #0066FF;
         font-size: 1.7rem;
-    }
-
-    #click:checked ~ .nav-links ul{
-        left: 0;
-    }
-    #click:checked ~ .menu-btn i:before{
-        content: "\f00d";
     }
 
     header{
@@ -1013,21 +1003,37 @@ ul li:nth-of-type(2){
     }
 
 
-    .nav-links ul{
+    .nav-links{
         position: fixed;
         top: 80px;
-        left: -100%;
-        display: block;
-        background-color: #24366B;
-        height: 100vh;
-        width: 100%;
+        left: 0;
+        display: flex;
+        flex-direction: column;
+        background-color: rgb(36, 54, 107, .8);
+        height: 0;
+        width: 70vw;
         z-index: 999;
-        transition: all 0.3s ease;
+        transition: all 0.5s;
+        overflow: hidden;
+    }
+
+    .nav-links ul{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .nav-links.openMenu{
+        height: 100vh;
     }
 
     .nav-links ul li{
         margin-top: 40px;
-        margin-left: 8%;
+    }
+
+    ul li:nth-of-type(2){
+        margin-left: 0;
+        padding-bottom: 40px;
     }
 
     .nav-links ul li a{
@@ -1123,7 +1129,7 @@ ul li:nth-of-type(2){
   }
 }
 
-@media only screen and (min-width : 1001px){
+@media only screen and (min-width : 991px){
 
     #click, .menu-btn{
         display: none;

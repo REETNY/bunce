@@ -23,12 +23,9 @@
                 <img id="logo" src="thumbnail/img/Vector.png" alt="website logo" title="bunce" />
             </div>
 
-            <input type="checkbox" id="click">
-            <label for="click" class="menu-btn">
-                <i class="fa fa-bars"></i>
-            </label>
+            <div class="menu-btn" onclick="clickMenu()"><i id="click" class="fa fa-bars"></i></div>
 
-            <div class="nav-links">
+            <div class="nav-links" id="links">
                 <ul>
                     <li><a href="#">Features</a></li>
                     <li><a href="#">Pricing</a></li>
@@ -266,5 +263,13 @@
         </div>
     </section>
 
+
+    <script>
+        let links = document.getElementById("links");
+
+        function clickMenu(){
+            links.classList.toggle("openMenu")
+        }
+    </script>
 </body>
 </html>
