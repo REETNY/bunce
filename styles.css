@@ -1011,7 +1011,7 @@ ul li a{
 
 
     .nav-links{
-        position: fixed;
+        position: absolute;
         top: 80px;
         right: 0;
         display: flex;
@@ -1031,7 +1031,7 @@ ul li a{
     }
 
     .nav-links.openMenu{
-        height: 100vh;
+        height: 30vh;
     }
 
     .nav-links ul li{
